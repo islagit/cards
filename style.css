@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  background-color: #0b1226;
+  color: #cbd5e1;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+
+
+.accordion-item {
+  margin-bottom: 5px;
+  border: 1px solid #22335c;
+  border-radius: 4px;
+  overflow: hidden;
+  background-color: #121f40;
+}
+
+.accordion-toggle {
+  background-color: #1e2a78;
+  color: #e0e7ff;
+  padding: 12px 16px;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.accordion-toggle:hover {
+  background-color: #384aad;
+}
+
+.accordion-toggle.active {
+  background-color: #15256b;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+  background-color: #0a183d;
+  color: #cbd5e1;
+}
+
+.accordion-content.active {
+  max-height: 1000px;
+  transition: max-height 0.5s ease-in;
+}
+
+.accordion-content-inner {
+  padding: 16px;
+}
+
+.level-1 .accordion-toggle {
+  background-color: #12296b;
+  /* темно-синий */
+  font-size: 18px;
+}
+
+.level-1 .accordion-toggle:hover {
+  background-color: #1f3bb3;
+}
+
+.level-2 .accordion-toggle {
+  background-color: #3c59a8;
+  font-size: 16px;
+}
+
+.level-2 .accordion-toggle:hover {
+  background-color: #587ad6;
+}
+
+.level-3 .accordion-toggle {
+  background-color: #243b7b;
+  font-size: 14px;
+}
+
+.level-3 .accordion-toggle:hover {
+  background-color: #4058b1;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #a3b1d1;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #22335c;
+  border-radius: 4px;
+  margin-right: 10px;
+  background-color: #122544;
+  color: #d1d9f0;
+}
+
+button {
+  background-color: #1e2a78;
+  color: #e0e7ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #384aad;
+}
+
+.nested {
+  margin-left: 20px;
+  margin-top: 10px;
+}
