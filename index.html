@@ -2,14 +2,42 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Аккордеон из массивов</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Аккордеон с CRUD и сохранением</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="container">
-      <div id="accordion-container"></div>
+    <div class="main-header">
+      <button class="add-root-btn" onclick="addRootSection()">
+        + Добавить секцию
+      </button>
     </div>
+
+    <div id="accordion-container"></div>
+
+    <div class="modal" id="editModal">
+      <div class="modal-content">
+        <h3 class="modal-title" id="modalTitle">Редактирование</h3>
+        <input
+          type="text"
+          class="modal-input"
+          id="titleInput"
+          placeholder="Заголовок"
+        />
+        <textarea
+          class="modal-textarea"
+          id="contentInput"
+          placeholder="Содержимое"
+        ></textarea>
+        <div class="modal-buttons">
+          <button class="modal-btn save" onclick="saveEdit()">Сохранить</button>
+          <button class="modal-btn cancel" onclick="closeModal()">
+            Отмена
+          </button>
+        </div>
+      </div>
+    </div>
+
     <script src="script.js"></script>
   </body>
 </html>
